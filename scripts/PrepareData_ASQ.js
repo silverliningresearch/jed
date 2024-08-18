@@ -60,30 +60,15 @@ function initCurrentTimeVars_asq() {
   }
  
   switch(currentQuarter) {
-    case "2023-Q2":
-      total_quota_asq = 700;
-      break;
-    case "2023-Q3":
-      total_quota_asq = 700;
-      break;
-    case "2023-Q4":
-      total_quota_asq = 700;
-      break;   
-    case "2024-Q1":
-        total_quota_asq = 700;
-        break;            
-    case "2024-Q2":
-      total_quota_asq = 700;
-      break;            
     case "2024-Q3":
-      total_quota_asq = 700;
+      total_quota_asq = 350;
       break;            
     case "2024-Q4":
-      total_quota_asq = 700;
+      total_quota_asq = 500;
       break;            
   
     default:
-      total_quota_asq = 700;
+      total_quota_asq = 500;
       break;
   }
 }
