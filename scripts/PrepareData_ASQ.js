@@ -287,4 +287,5 @@ function prepareInterviewData_asq() {
 
     if (flight.Quota>0) daily_plan_data_asq.push(flight);
   }
+  //console.log("daily_plan_data:", daily_plan_data_asq)
 }

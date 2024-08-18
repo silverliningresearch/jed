@@ -46,9 +46,8 @@
         //define header
         data.addColumn('string', 'Date');
         data.addColumn('string', 'Time');
-        data.addColumn('number', 'TER');
-        data.addColumn('string', 'Gate Area');
-        data.addColumn('string', 'Gate');
+        data.addColumn('string', 'TER');
+        data.addColumn('string', 'Int/Dom');
         data.addColumn('string', 'Flight');
         data.addColumn('string', 'To');
         data.addColumn('number', 'Remaining Flights');
@@ -74,7 +73,8 @@
             data.addRows([[
                 row.Date, 
                 row.Time, 
-                row.TER, row.GateArea, row.Gate,
+                row.TER, 
+                row.int_dom,
                 row.Flight_Show, row.DestName, 
                 Number(row.remaining_flights), Number(row.Quota), Number(row.Completed), Number(row.Difference), 
                 Number(row.Completed_percent), 
@@ -119,10 +119,10 @@
         });
 
         var options = {
-          'filterColumnLabel': 'Gate Area',
+          'filterColumnLabel': 'Int/Dom',
           "ui": {"label": "", 
                 "labelStacking": 'horizotal',
-                "caption": "Select Gate Area",
+                "caption": "Select Int/Dom",
                 }
         };
         
@@ -171,7 +171,6 @@
     <div id="dashboard_div">
       <!--Divs that will hold each control and chart-->
       <div id="filter_terminal"></div>
-      </br>
       <div id="filter_div" style="font-size: 15px"> </div>
       </br>
       <div id="table_div"></div>
