@@ -138,7 +138,7 @@ function prepareInterviewData_asq() {
   dest_quota_asq = [];
   dest_quota_asq.length = 0;
   for (i = 0; i < dest_quota_asq_temp.length; i++) {
-    if (dest_quota_asq_temp[i].Quarter == currentQuarter)
+    if ((dest_quota_asq_temp[i].Quarter == currentQuarter)  && (dest_quota_asq_temp[i].Quota>=1))
     {
       dest_quota_asq.push(dest_quota_asq_temp[i]);
     }
@@ -270,7 +270,7 @@ function prepareInterviewData_asq() {
        }
     }
 
-    if (flight.Quota>0) daily_plan_data_asq.push(flight);
+    if (flight.Quota > 0) daily_plan_data_asq.push(flight);
   }
   //console.log("daily_plan_data:", daily_plan_data_asq)
 }
