@@ -61,9 +61,11 @@ function initCurrentTimeVars_asq() {
  
   switch(currentQuarter) {
     case "2024-Q3":
+    case "2024-Q4":
       total_quota_asq = 350;
       break;            
-    case "2024-Q4":
+
+    case "2025-Q1":
       total_quota_asq = 500;
       break;            
   
