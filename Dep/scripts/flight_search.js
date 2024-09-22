@@ -48,7 +48,7 @@ function flight_in_list_found(list, item) {
   return false;
 }
 
-function notDeparted_flight_search(flight_time) {
+function notDeparted_flight_search(flight_date, flight_time) {
   var current_time = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dubai', hour12: false});
   //15:13:27
   var current_time_value  = current_time.substring(current_time.length-8,current_time.length-6) * 60;
@@ -57,11 +57,21 @@ function notDeparted_flight_search(flight_time) {
   //Time: 0805    
   var flight_time_value = flight_time.substring(0,2) * 60 + flight_time.substring(2,4)*1;
   
-  //plus  3 hour
-  flight_time_value = flight_time_value + 180;
+  var result = false;
+  
+  //allow departure time range compare to the current time: -4h +4h
+  
+  //if next date, plus 24 hour
+  if (flight_date == getTomorrow()) 
+  {  
+    flight_time_value = flight_time_value + 24*60;
+  }
 
-  var result = (flight_time_value > current_time_value);
-  //var result = true; //skip this check as requested by BUD team
+  if ((current_time_value < (flight_time_value + 240)) && (current_time_value > (flight_time_value - 240))) //within[-4h +4h]
+  {
+      result = true; 
+  }
+
   return (result);
 }
 
@@ -72,11 +82,31 @@ function load_flight_list() {
   flightShortList = [];
   flightShortList.length = 0;
 
+  
+  var terminal_value = api.fn.answers().Q2; 
+  var terminal  = "Terminal 1";
+
+  if (terminal_value == 1 )
+  {
+    terminal  = "Terminal 1";
+  }
+  else if (terminal_value == 2 )
+  {
+    terminal  = "North Terminal";
+  }
+  else
+  {
+    terminal  = "North Terminal";
+  }
+
+  console.log("terminal_value: ", terminal_value);
+  console.log("terminal: ", terminal);
+
   for (i = 0; i < flightRawList.length; i++) {
     var flight = flightRawList[i];
-    if (((flight.Date == getToDate()) || (flight.Date == getTomorrow()))
-        //&& notDeparted_flight_search(flight.Time)) //today flight && departure
-     ) 
+    if (
+        ((flight.Date == getToDate() || (flight.Date == getTomorrow())) && notDeparted_flight_search(flight.Date, flight.Time)) //today flight && departure
+        && ((flight.TER == terminal) || (terminal  == "ALL")))
     {
       {
         var Date = '"Date"' + ":" + '"' +  flightRawList[i].Date + '", ';
@@ -95,7 +125,7 @@ function load_flight_list() {
         }
 
         var Show = '"Show"' + ":" + '"' +  flightRawList[i].Flight + " (" 
-        Show += flightRawList[i].Time + " to " + flightRawList[i].DestName ;
+        Show += flightRawList[i].Time +" " + flightRawList[i].Date  + " to " + flightRawList[i].DestName ;
         if (flightRawList[i].Next && flightRawList[i].Next !="" && flightRawList[i].Next != flightRawList[i].Dest) {
           Show += " via " +  flightRawList[i].Next ;
         }
