@@ -1,568 +1,724 @@
-     let Destination_Quota = ` 
+     let airline_dest_quota = ` 
 [
  {
-  "quota_id": "PZU - 3T",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AMD - 6E",
+  "quota_id": "3T-PZU",
+  "TER": "North Terminal",
   "Quota": 4,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "BOM - 6E",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CCJ - 6E",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DEL - 6E",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "HYD - 6E",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "HBE - E5",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DXB - EK",
-  "Quota": 29,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ADD - ET",
-  "Quota": 9,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AUH - EY",
-  "Quota": 23,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AHB - F3",
-  "Quota": 16,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - F3",
-  "Quota": 10,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DMM - F3",
-  "Quota": 17,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ELQ - F3",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "GIZ - F3",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "IST - F3",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "RUH - F3",
-  "Quota": 75,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "SSH - F3",
+  "quota_id": "6E-AMD",
+  "TER": "North Terminal",
   "Quota": 3,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "TUU - F3",
+  "quota_id": "6E-BOM",
+  "TER": "North Terminal",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "6E-CCJ",
+  "TER": "North Terminal",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "6E-DEL",
+  "TER": "North Terminal",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "6E-HYD",
+  "TER": "North Terminal",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "E5-HBE",
+  "TER": "North Terminal",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "ET-ADD",
+  "TER": "North Terminal",
   "Quota": 10,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "DXB - FZ",
-  "Quota": 9,
+  "quota_id": "FT-CAI",
+  "TER": "North Terminal",
+  "Quota": 3,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "SHJ - G9",
-  "Quota": 8,
+  "quota_id": "G9-SHJ",
+  "TER": "North Terminal",
+  "Quota": 7,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "BAH - GF",
-  "Quota": 13,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "TAS - HY",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ADE - IY",
+  "quota_id": "IY-ADE",
+  "TER": "North Terminal",
   "Quota": 5,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "PZU - J4",
+  "quota_id": "J4-PZU",
+  "TER": "North Terminal",
   "Quota": 10,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "KWI - J9",
-  "Quota": 20,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "KWI - KU",
-  "Quota": 12,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "BEY - ME",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "KUL - MH",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - MS",
-  "Quota": 27,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - NE",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - NP",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "MCT - OV",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "SAW - PC",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DOH - QR",
-  "Quota": 26,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AMM - RJ",
-  "Quota": 17,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "PZU - SD",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CCJ - SG",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - SM",
-  "Quota": 9,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "HBE - SM",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ABT - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ADD - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AHB - SV",
-  "Quota": 30,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ALG - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AMM - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "BKK - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "BLR - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "BOM - SV",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - SV",
-  "Quota": 49,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CDG - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CGK - SV",
-  "Quota": 25,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CMN - SV",
-  "Quota": 11,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "COK - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DAC - SV",
-  "Quota": 14,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DEL - SV",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DMM - SV",
-  "Quota": 28,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DXB - SV",
+  "quota_id": "J9-KWI",
+  "TER": "North Terminal",
   "Quota": 19,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "EAM - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ELQ - SV",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "GIZ - SV",
-  "Quota": 15,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "HAS - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "HBE - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "HYD - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "ISB - SV",
-  "Quota": 11,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "IST - SV",
-  "Quota": 13,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "KHI - SV",
-  "Quota": 11,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "KUL - SV",
-  "Quota": 15,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "KWI - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "LGW - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "LHE - SV",
-  "Quota": 18,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "LHR - SV",
-  "Quota": 11,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "LKO - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "MAN - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "MED - SV",
-  "Quota": 18,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "MNL - SV",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "MUX - SV",
-  "Quota": 6,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "NUM - SV",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "RUH - SV",
-  "Quota": 103,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "TUN - SV",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "TUU - SV",
-  "Quota": 10,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "IST - TK",
-  "Quota": 8,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "SAW - TK",
-  "Quota": 5,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - UJ",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "MCT - WY",
-  "Quota": 10,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AHB - XY",
-  "Quota": 7,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "AMM - XY",
-  "Quota": 4,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "CAI - XY",
-  "Quota": 20,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "DMM - XY",
+  "quota_id": "MS-CAI",
+  "TER": "North Terminal",
   "Quota": 22,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "DXB - XY",
-  "Quota": 12,
-  "Year": "2024",
-  "Month": "08"
- },
- {
-  "quota_id": "GIZ - XY",
+  "quota_id": "NE-CAI",
+  "TER": "North Terminal",
   "Quota": 5,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "RUH - XY",
-  "Quota": 45,
+  "quota_id": "NP-CAI",
+  "TER": "North Terminal",
+  "Quota": 6,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "SAW - XY",
+  "quota_id": "OV-MCT",
+  "TER": "North Terminal",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "PC-SAW",
+  "TER": "North Terminal",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SD-PZU",
+  "TER": "North Terminal",
   "Quota": 5,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "TUU - XY",
+  "quota_id": "SM-CAI",
+  "TER": "North Terminal",
   "Quota": 7,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
  },
  {
-  "quota_id": "TZX - XY",
-  "Quota": 5,
+  "quota_id": "SM-HBE",
+  "TER": "North Terminal",
+  "Quota": 3,
+  "period_id": "2024-09",
   "Year": "2024",
-  "Month": "08"
+  "Month": "09"
+ },
+ {
+  "quota_id": "UJ-CAI",
+  "TER": "North Terminal",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "UK-BOM",
+  "TER": "North Terminal",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "EK-DXB",
+  "TER": "Terminal 1",
+  "Quota": 24,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "EY-AUH",
+  "TER": "Terminal 1",
+  "Quota": 23,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-AHB",
+  "TER": "Terminal 1",
+  "Quota": 14,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-CAI",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-DMM",
+  "TER": "Terminal 1",
+  "Quota": 15,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-ELQ",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-GIZ",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-RUH",
+  "TER": "Terminal 1",
+  "Quota": 61,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "F3-TUU",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "FZ-DXB",
+  "TER": "Terminal 1",
+  "Quota": 8,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "GF-BAH",
+  "TER": "Terminal 1",
+  "Quota": 11,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "KU-KWI",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "ME-BEY",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "MH-KUL",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "QR-DOH",
+  "TER": "Terminal 1",
+  "Quota": 32,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "RJ-AMM",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-ADD",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-AHB",
+  "TER": "Terminal 1",
+  "Quota": 14,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-ALG",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-AMM",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-BKK",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-BLR",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-BOM",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-CAI",
+  "TER": "Terminal 1",
+  "Quota": 37,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-CDG",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-CGK",
+  "TER": "Terminal 1",
+  "Quota": 20,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-CGP",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-CMN",
+  "TER": "Terminal 1",
+  "Quota": 11,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-COK",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-DAC",
+  "TER": "Terminal 1",
+  "Quota": 16,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-DEL",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-DMM",
+  "TER": "Terminal 1",
+  "Quota": 37,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-DXB",
+  "TER": "Terminal 1",
+  "Quota": 20,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-EAM",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-ELQ",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-GIZ",
+  "TER": "Terminal 1",
+  "Quota": 12,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-HAS",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-HBE",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-HYD",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-ISB",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-IST",
+  "TER": "Terminal 1",
+  "Quota": 11,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-KAN",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-KHI",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-KUL",
+  "TER": "Terminal 1",
+  "Quota": 15,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-KWI",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-LGW",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-LHE",
+  "TER": "Terminal 1",
+  "Quota": 16,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-LHR",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-LKO",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-MAN",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-MED",
+  "TER": "Terminal 1",
+  "Quota": 15,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-MNL",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-MUX",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-RUH",
+  "TER": "Terminal 1",
+  "Quota": 88,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-SUB",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-TUN",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "SV-TUU",
+  "TER": "Terminal 1",
+  "Quota": 8,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "TK-IST",
+  "TER": "Terminal 1",
+  "Quota": 11,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "TK-SAW",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "WY-MCT",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-AHB",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-CAI",
+  "TER": "Terminal 1",
+  "Quota": 16,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-DMM",
+  "TER": "Terminal 1",
+  "Quota": 19,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-DXB",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-GIZ",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-RUH",
+  "TER": "Terminal 1",
+  "Quota": 47,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
+ },
+ {
+  "quota_id": "XY-TUU",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "period_id": "2024-09",
+  "Year": "2024",
+  "Month": "09"
  }
 ]    
 
