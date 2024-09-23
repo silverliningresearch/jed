@@ -161,7 +161,7 @@
 
         var view = new google.visualization.DataView(data);
         view.hideColumns([priority_col, priority_col-1]); //hide priority one
-        //document.getElementById("terminal_filter_div").style.display = "none";
+        document.getElementById("gate_filter_div").style.display = "none";
         dashboard.draw(view);
 
          //overall_status
