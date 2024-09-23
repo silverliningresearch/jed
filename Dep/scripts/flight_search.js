@@ -96,7 +96,7 @@ function load_flight_list() {
   }
   else
   {
-    terminal  = "ST";
+    terminal  = "South Terminal";
   }
 
   console.log("terminal_value: ", terminal_value);
