@@ -109,13 +109,7 @@ function load_flight_list() {
         && ((flight.TER == terminal) || (terminal  == "ALL")))
     {
       {
-        var Date = '"Date"' + ":" + '"' +  flightRawList[i].Date + '", ';
-        var Time = '"Time"' + ":" + '"' +  flightRawList[i].Time + '", ';
-        var Flight = '"Flight"' + ":" + '"' +  flightRawList[i].Flight + '", ';
-        var Airline = '"Airline"' + ":" + '"' +  flightRawList[i].Airline + '", '; //name
-        var AirlineCode = '"AirlineCode"' + ":" + '"' +  flightRawList[i].AirlineCode + '", ';//code
-        var Dest = '"Dest"' + ":" + '"' +  flightRawList[i].Dest + '", ';
-        var DestName = '"DestName"' + ":" + '"' +  flightRawList[i].DestName + '", ';
+        var item  = flightRawList[i];
         var Via = "";
         var ViaName = "";
 
@@ -124,16 +118,17 @@ function load_flight_list() {
           ViaName = '"ViaName"' + ":" + '"' +  flightRawList[i].NextName + '", ';
         }
 
-        var Show = '"Show"' + ":" + '"' +  flightRawList[i].Flight + " (" 
+        var Show = flightRawList[i].Flight + " (" 
         Show += flightRawList[i].Time +" " + flightRawList[i].Date  + " to " + flightRawList[i].DestName ;
         if (flightRawList[i].Next && flightRawList[i].Next !="" && flightRawList[i].Next != flightRawList[i].Dest) {
           Show += " via " +  flightRawList[i].Next ;
         }
         Show +=")";
 
-        var str = '{' + Date + Time + AirlineCode + Airline + Flight +  Dest + DestName + Via + ViaName +  Show + '"}';
+        item.Show = Show; 
+        item.Via = Via; 
+        item.ViaName = ViaName;
       
-        var item  = JSON.parse(str);
         flightList.push(item);
       }
     }
