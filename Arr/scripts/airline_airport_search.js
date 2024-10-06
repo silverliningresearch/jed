@@ -76,7 +76,7 @@ function notDeparted_flight_search(flight_date, flight_time) {
 }
 
 function load_flight_list(question) {
-  flightRawList = JSON.parse(JED_Departures_Flight_List_Raw);
+  flightRawList = JSON.parse(arr_flight_list_Raw);
   flightList = [];
   flightList.length = 0;
   flightShortList = [];
@@ -159,7 +159,7 @@ function save_airport_value(question, value) {
   console.log("save airport  done!");
 }
 
-function show_flight_search_box(question) {
+function show_airport_airline_search_box(question) {
   load_flight_list(question);
   
   var defaultValue = "";
@@ -167,6 +167,6 @@ function show_flight_search_box(question) {
   aui_show_external_search_box(question, defaultValue);
 }
 
-function hide_flight_search_box() {
+function hide_airport_airline_search_box() {
   aui_hide_external_search_box();
 }
