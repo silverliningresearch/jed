@@ -1,6 +1,0 @@
-    let removed_ids = `
-    [
-     
-    ]
-     
-    `;
