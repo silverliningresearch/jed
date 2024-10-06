@@ -62,27 +62,31 @@ function notDeparted_flight_search(flight_date, flight_time) {
   //allow departure time range compare to the current time: -4h +4h
   
   //if next date, plus 24 hour
-  if (flight_date == getTomorrow()) 
-  {  
-    flight_time_value = flight_time_value + 24*60;
-  }
+  // if (flight_date == getTomorrow()) 
+  // {  
+  //   flight_time_value = flight_time_value + 24*60;
+  // }
 
-  if ((current_time_value < (flight_time_value + 240)) && (current_time_value > (flight_time_value - 240))) //within[-4h +4h]
+  //arrival -8h
+  if ((current_time_value < (flight_time_value + 480))) //within[-8h]
   {
       result = true; 
   }
-
+  
+  //arrival: fullist
+  result = true; 
   return (result);
 }
 
 function load_flight_list(question) {
   flightRawList = JSON.parse(arr_flight_list_Raw);
-  flightList = [];
-  flightList.length = 0;
+  var tmpList = [];
+  tmpList.length = 0;
   flightShortList = [];
   flightShortList.length = 0;
 
-  
+  var airline_value = api.fn.answers().airline_code; 
+
   var terminal_value = api.fn.answers().Q2; 
   var terminal  = "Terminal 1";
 
@@ -108,34 +112,46 @@ function load_flight_list(question) {
         ((flight.Date == getToDate() || (flight.Date == getTomorrow())) && notDeparted_flight_search(flight.Date, flight.Time)) //today flight && departure
         && ((flight.TER == terminal) || (terminal  == "ALL")))
     {
+      if (((question == "Airport") && (flight.AirlineCode == airline_value )) //airport: only the same airline 
+        || (question == "Airline")) //airiline: all
       {
         var item  = flightRawList[i];
-        var Via = "";
-        var ViaName = "";
+        var item_temp  = {};
+        var Show = "";
 
-        if (  flightRawList[i].Next && flightRawList[i].Next !="" && flightRawList[i].Next != flightRawList[i].Dest) {
-          Via = '"Via"' + ":" + '"' +  flightRawList[i].Next + '", ';
-          ViaName = '"ViaName"' + ":" + '"' +  flightRawList[i].NextName + '", ';
+        // var Via = "";
+        // var ViaName = "";
+
+        if (question == "Airline") 
+        {
+          Show = item.AirlineCode + " (" +  item.Airline + ")" ;
+        }
+        else if (question == "Airport") 
+        {
+          Show = item.DestName;
         }
 
-        var Show = flightRawList[i].Flight + " (" 
-        Show += flightRawList[i].Time +" " + flightRawList[i].Date  + " to " + flightRawList[i].DestName ;
-        if (flightRawList[i].Next && flightRawList[i].Next !="" && flightRawList[i].Next != flightRawList[i].Dest) {
-          Show += " via " +  flightRawList[i].Next ;
-        }
-        Show +=")";
+        item_temp.Show = Show; 
+        item_temp.Dest = item.Dest;
+        item_temp.DestName = item.DestName;
+        item_temp.Airline = item.Airline;
+        item_temp.AirlineCode = item.AirlineCode;
+        item_temp.int_dom = item.int_dom;
 
-        item.Show = Show; 
-        item.Via = Via; 
-        item.ViaName = ViaName;
-      
-        flightList.push(item);
+        tmpList.push(item_temp);
       }
     }
   }
 
-  aui_init_search_list(flightList);
-  console.log("Load flight list done!");
+      flightList = tmpList.filter((obj, index, self) =>
+        index === self.findIndex((t) => (
+            t.Show === obj.Show
+        ))
+    );
+
+    aui_init_search_list(flightList);
+    console.log("Load flight list done!", tmpList);
+    console.log("Load flight list done!", flightList);
 }
 
 function save_airline_value(question, value) {

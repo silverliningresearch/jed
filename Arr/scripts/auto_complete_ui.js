@@ -132,8 +132,13 @@ function selected_handler(val) {
   console.log('currentSearchQuestion: ', currentSearchQuestion);
 
   switch (currentSearchQuestion) {
-    case "Flight_Number": //Flight number
-      save_flight_value(currentSearchQuestion, val);
+    case "Airline": //Airline
+      save_airline_value(currentSearchQuestion, val);
+      $('.rt-btn.rt-btn-next').show(); 
+      break;     
+
+    case "Airport": //Airport
+      save_airport_value(currentSearchQuestion, val);
       $('.rt-btn.rt-btn-next').show(); 
       break;     
 
