@@ -159,18 +159,10 @@ function save_flight_value(question, value) {
   console.log("save flight  done!");
 }
 
-function show_flight_search_box(question) {
+function show_airport_airline_search_box(question) {
   load_flight_list();
   
   var defaultValue = "";
-  // if (question == "Core_Q11") {
-  //   defaultValue = api.fn.answers().Core_Q11_ext;
-
-  // }
-  // else if (question == "Core_Q13")
-  // {
-  //   defaultValue = api.fn.answers().Core_Q13_ext;
-  // }
 
   aui_show_external_search_box(question, defaultValue);
 }

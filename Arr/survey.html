@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JED - Arrival Survey</title>
+    <title>JED - Departures Survey</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link
@@ -30,7 +30,7 @@
 
   <body>
     <survalyzer-survey
-      surveyhash="dmzawmofyo"
+      surveyhash="zvbkdgzint"
       tenant="silverlining"
     ></survalyzer-survey>
 
@@ -40,7 +40,7 @@
 
     <script src="../data/JED_departures_flight_list.js"></script>
     
-    <script src="scripts/flight_search.js"></script>
+    <script src="scripts/airport_airline_search.js"></script>
     <script src="scripts/auto_complete_ui.js"></script>
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
@@ -52,10 +52,14 @@
           const listSearchHandler = () => {
             console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
             
-            if (api.fn.getCurrentPageIndex()==1) {
-              show_flight_search_box("Flight_Number");
-            } else {
-              hide_flight_search_box();
+            if (api.fn.getCurrentPageIndex()==4) {
+              show_airport_airline_search_box("Flight_Number");
+            } 
+            else if (api.fn.getCurrentPageIndex()==4) {
+              show_airport_airline_search_box("Flight_Number");
+            } 
+            else {
+              hide_airport_airline_search_box();
             };
           }    
           api.events.subscribe('next', listSearchHandler);

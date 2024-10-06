@@ -132,14 +132,10 @@ function selected_handler(val) {
   console.log('currentSearchQuestion: ', currentSearchQuestion);
 
   switch (currentSearchQuestion) {
-    case "Airline": //Flight number
-      save_airline_value(currentSearchQuestion, val);
+    case "Flight_Number": //Flight number
+      save_flight_value(currentSearchQuestion, val);
       $('.rt-btn.rt-btn-next').show(); 
       break;     
-    case "Airport": //Flight number
-      save_airport_value(currentSearchQuestion, val);
-      $('.rt-btn.rt-btn-next').show(); 
-      break; 
 
     default:
       break;         
@@ -151,11 +147,11 @@ function changed_handler(val) {
   console.log('changed_handler: ', val);
   console.log('currentSearchQuestion: ', currentSearchQuestion);
   switch (currentSearchQuestion) {
-    // case "Core_Q11": //Final airport
-    // case "Core_Q13": //From  airport    
-    //   save_airport_value(currentSearchQuestion, val);
-    //   $('.rt-btn.rt-btn-next').show(); 
-    //   break;     
+    case "Core_Q11": //Final airport
+    case "Core_Q13": //From  airport    
+      save_airport_value(currentSearchQuestion, val);
+      $('.rt-btn.rt-btn-next').show(); 
+      break;     
 
     default:
       break;         
