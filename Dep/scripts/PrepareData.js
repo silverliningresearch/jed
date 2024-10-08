@@ -84,7 +84,7 @@ function getInterviewMonth(interviewEndDate)
 
 
 function notDeparted(flight_time) {
-  var current_time = new Date().toLocaleString('en-US', { timeZone:  'Asia/Dubai', hour12: false});
+  var current_time = new Date().toLocaleString('en-US', { timeZone:  'Asia/Riyadh', hour12: false});
   //15:13:27
   var current_time_value  = current_time.substring(current_time.length-8,current_time.length-6) * 60;
   current_time_value += current_time.substring(current_time.length-5,current_time.length-3)*1;
@@ -93,7 +93,7 @@ function notDeparted(flight_time) {
   var flight_time_value = flight_time.substring(0,2) * 60 + flight_time.substring(2,4)*1;
   var result = (flight_time_value > current_time_value);
 
-  result = true;
+  //result = true;
   return (result);
 }
 
