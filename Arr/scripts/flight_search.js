@@ -76,7 +76,7 @@ function notDeparted_flight_search(flight_date, flight_time) {
 }
 
 function load_flight_list() {
-  flightRawList = JSON.parse(JED_Departures_Flight_List_Raw);
+  flightRawList = JSON.parse(arr_flight_list_Raw);
   flightList = [];
   flightList.length = 0;
   flightShortList = [];

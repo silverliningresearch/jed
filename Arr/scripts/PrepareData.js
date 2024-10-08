@@ -91,9 +91,14 @@ function notDeparted(flight_time) {
 
   //Time: 0805    
   var flight_time_value = flight_time.substring(0,2) * 60 + flight_time.substring(2,4)*1;
-  var result = (flight_time_value > current_time_value);
 
-  result = true;
+  var result = false;
+
+  if ((current_time_value < (flight_time_value + 120))) //within[-2h]
+  {
+      result = true; 
+  }
+
   return (result);
 }
 
@@ -115,7 +120,7 @@ function isvalid_id(id)
 function prepareInterviewData() {
   var quota_data_temp = JSON.parse(airline_dest_quota);
   var interview_data_full  = JSON.parse(interview_statistics);
-  var flight_list_full  = JSON.parse(JED_Departures_Flight_List_Raw);
+  var flight_list_full  = JSON.parse(arr_flight_list_Raw);
 
   initCurrentTimeVars();		
   
