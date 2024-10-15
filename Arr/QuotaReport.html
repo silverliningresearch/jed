@@ -58,7 +58,7 @@
 
         //define header
         data.addColumn('string', 'Airline-Dest');
-        data.addColumn('string', 'To');
+        data.addColumn('string', 'Terminal');
         //data.addColumn('string', 'DOOP [Mon-Sun]');
         data.addColumn('number', 'Remaining Flights');                
         data.addColumn('number', 'Quota');
@@ -72,7 +72,7 @@
           data.addRows([
           [
             row.quota_id, 
-            row.Dest,
+            row.TER,
             //row.doop,
             Number(row.remaining_flights), 
             Number(row.Quota),
@@ -92,7 +92,7 @@
           'controlType': 'CategoryFilter',
           'containerId': 'filter_div',
           'options': {
-            'filterColumnLabel': 'To'
+            'filterColumnLabel': 'Terminal'
           }
         });
   
@@ -111,7 +111,7 @@
         dashboard.bind(tableFilter, tableChart);
 
         var view = new google.visualization.DataView(data);
-        document.getElementById("filter_div").style.display = "none";
+        //document.getElementById("filter_div").style.display = "none";
         dashboard.draw(view);
 
         //Update time info
@@ -135,7 +135,6 @@
       <select id="selected_period" onchange="drawTable()">
         <option value="current-period">current month
         <option value="2024-10">10-2024                                                                                                
-        <option value="2024-09">09-2024                                                                                      
 
       </select>
     </div>
