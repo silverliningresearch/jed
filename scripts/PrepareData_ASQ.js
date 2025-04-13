@@ -161,16 +161,13 @@ function prepareInterviewData_asq() {
 
     var Agent_Letters = parts[0];
     var Agent_Destination = parts[1];
+    
+    //speciall treatment for EJU EZY MBU
+    if (Agent_Letters == "EZY") Agent_Letters = "U2";
+    if (Agent_Letters == "EJU") Agent_Letters = "EC";
+    if (Agent_Letters == "MBU") Agent_Letters = "DI";
 
     var interview_quarter = getQuarterFromMonth_asq(interview_month, interview_year);
-
-    // special treatment for "XY-DMM" -- for Q2-2025 
-    if ((interview_quarter == "2025-Q2") && (Agent_Letters + "-" + Agent_Destination == "XY-DMM"))
-    {
-      interview["Number of interviews"] = 7;
-      console.log("XY-DMM:", interview);
-    }
-    
 
     if ((currentQuarter == interview_quarter))
     {
@@ -180,7 +177,6 @@ function prepareInterviewData_asq() {
       var InterviewEndDate = '"InterviewEndDate"' + ":" + '"' +  interview["InterviewDate"]+ '", ' ;
       var Completed_of_interviews = '"Completed_of_interviews"' + ":" + '"' +  interview["Number of interviews"] ;
       var str = '{' + Airline_Dest + Airline + Dest + InterviewEndDate + Completed_of_interviews + '"}';
-
       interview_data_asq.push(JSON.parse(str));
     }
   }
@@ -195,6 +191,25 @@ function prepareInterviewData_asq() {
   
   for (i = 0; i < flight_list_temp.length; i++) {
     let flight = flight_list_temp[i];
+
+    //speciall treatment for EJU and EZY: Airline code in fligth schedule using ICAO, but sampling using IATA 
+    var flight_letters = flight.Flight.substring(0,3);
+    var flight_number = flight.Flight.substring(3,8);
+    flight.Flight_Show = flight.Flight;
+    
+    if ((flight_letters == "EZY") || (flight_letters == "EJU") || (flight_letters == "MBU")) 
+    {
+      var new_flight_letters = flight_letters;
+      if (flight_letters == "EZY") new_flight_letters = "U2";
+      if (flight_letters == "EJU") new_flight_letters = "EC";
+      if (flight_letters == "MBU") new_flight_letters = "DI";
+      
+      flight.Flight_Show = new_flight_letters + " " + flight_number;
+      flight.AirlineCode = new_flight_letters;
+      
+      flight.Flight_Show = flight.Flight_Show + " (" +  flight.Flight +")";
+    }
+
 
     flight.Airline_Dest = flight.AirlineCode + "-" + flight.Dest;//code for compare
 
@@ -257,10 +272,7 @@ function prepareInterviewData_asq() {
        }
     }
 
-    if (flight.Quota > 0) 
-    {
-      daily_plan_data_asq.push(flight);
-    }
+    if (flight.Quota > 0) daily_plan_data_asq.push(flight);
   }
   //console.log("daily_plan_data:", daily_plan_data_asq)
 }
