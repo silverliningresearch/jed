@@ -63,6 +63,10 @@ function initCurrentTimeVars() {
       total_quota = 1000;
       break;      
 
+    case "2025-04":      
+      total_quota = 800 + 80;
+      break;    
+
     default:
       total_quota = 800;
       break;
@@ -132,6 +136,81 @@ function prepareInterviewData() {
     if ((quota_data_temp[i].Quota>0)
          && (quota_data_temp[i].period_id == current_period))
     {
+      if (currentMonth == "2025-04") // Add up 100 due to missing Int / Dom info
+      {
+        const twoColumnArray = [
+          ["6E-CCJ", 1],
+          ["E5-HBE", 3],
+          ["EK-DXB", 2],
+          ["F3-AMM", 1],
+          ["F3-CAI", 2],
+          ["F3-HMB", 1],
+          ["FZ-DXB", 2],
+          ["GF-BAH", 1],
+          ["IX-IXE", 2],
+          ["IY-ADE", 3],
+          ["KU-KWI", 2],
+          ["ME-BEY", 1],
+          ["MS-CAI", 5],
+          ["NE-HMB", 1],
+          ["NE-LXR", 1],
+          ["NP-CAI", 1],
+          ["OV-MCT", 2],
+          ["QR-DOH", 3],
+          ["SM-ATZ", 1],
+          ["SM-CAI", 4],
+          ["SV-AMM", 1],
+          ["SV-BKK", 1],
+          ["SV-BLR", 1],
+          ["SV-CAI", 6],
+          ["SV-CDG", 1],
+          ["SV-CGK", 2],
+          ["SV-DAC", 2],
+          ["SV-DOH", 1],
+          ["SV-DPS", 1],
+          ["SV-DXB", 3],
+          ["SV-HBE", 1],
+          ["SV-HYD", 2],
+          ["SV-ISB", 1],
+          ["SV-IST", 1],
+          ["SV-KHI", 1],
+          ["SV-KWI", 1],
+          ["SV-LHE", 3],
+          ["SV-MNL", 1],
+          ["SV-NBO", 1],
+          ["SV-PEW", 1],
+          ["SV-TUN", 1],
+          ["SV-YYZ", 1],
+          ["TK-IST", 4],
+          ["UJ-CAI", 1],
+          ["W4-FCO", 1],
+          ["W4-MXP", 4],
+          ["XY-ADD", 2],
+          ["XY-AMM", 2],
+          ["XY-AUH", 2],
+          ["XY-BER", 3],
+          ["XY-CAI", 5],
+          ["XY-DOH", 1],
+          ["XY-DXB", 1],
+          ["XY-KHI", 1],
+
+        ];
+        twoColumnArray.forEach(row => {
+          if (quota_data_temp[i].quota_id == row[0]) {
+            console.log(`Column 1: ${row[0]}, Column 2: ${row[1]}`);
+            console.log("old quota", quota_data_temp[i].Quota);
+
+            quota_data_temp[i].Quota = quota_data_temp[i].Quota + row[1];
+
+            console.log("new quota", quota_data_temp[i].Quota);
+
+          }
+        });
+
+      }
+
+
+
       quota_data.push(quota_data_temp[i]);
     }
   }
