@@ -131,7 +131,7 @@ function prepareInterviewData() {
          && (quota_data_temp[i].period_id == current_period))
     {
       
-      if (currentMonth == "2025-04") // Add up 100 due to missing Int / Dom info
+      if (current_period == "2025-04") // Add up 100 due to missing Int / Dom info
       {
         const twoColumnArray = [
           ["6E-BOM", 1],
@@ -186,8 +186,6 @@ function prepareInterviewData() {
         });
 
       }
-
-
 
       quota_data.push(quota_data_temp[i]);
     }
