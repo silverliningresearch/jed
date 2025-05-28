@@ -55,19 +55,15 @@ function initCurrentTimeVars() {
       current_period = document.getElementById('selected_period').value;
     }
   }
-
   
   console.log("current_period: ", current_period);
   switch(current_period) {
-    case "2023-12":      
-      total_quota = 1000;
-      break;      
-    case "2025-04":      
-      total_quota = 1000 + 100;// Add up 100 due to missing Int / Dom info
+    case "2025-05":      
+      total_quota = 334;
       break;   
 
     default:
-      total_quota = 1000;
+      total_quota = 334;
       break;
   }
 }

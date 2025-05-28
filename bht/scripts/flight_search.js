@@ -83,7 +83,7 @@ function load_flight_list() {
   flightShortList.length = 0;
 
   
-  var terminal_value = api.fn.answers().Q2; 
+  var terminal_value = api.fn.answers().Location; 
   var terminal  = "Terminal 1";
 
   if (terminal_value == 1 )
