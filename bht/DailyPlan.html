@@ -168,8 +168,9 @@
         dashboard.draw(view);
 
          //overall_status
-        var overall_status =  "Total quota: " + total_quota;
-        overall_status += " - Total completed: " + total_completed + " (" + total_completed_percent + "%)";
+        var overall_status =  "This month quota: " + total_quota;
+        overall_status += " - This month completed: " + this_month_completed + " (" + total_completed_percent + "%)";
+        overall_status += " - This quarter completed: " + total_completed ;
         document.getElementById("overall_status").innerHTML =overall_status + " | " + "Data updated at " + download_time;
      }
     

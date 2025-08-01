@@ -19,7 +19,7 @@ var total_completed_percent;
 var total_quota_completed;
 var total_hard_quota;
 var total_quota;
-
+var this_month_completed;
 /************************************/
 function initCurrentTimeVars() {
   var today = new Date();
@@ -63,10 +63,26 @@ function initCurrentTimeVars() {
       break;   
     case "2025-07":      
       total_quota = 117;
+      currentQuarter = "2025-Q3";
       break;   
     case "2025-08":      
     case "2025-09":      
       total_quota = 443;
+      currentQuarter = "2025-Q3";
+      break;   
+
+    case "2025-10":      
+    case "2025-11":      
+    case "2025-12":          
+      total_quota = 334;
+      currentQuarter = "2025-Q4";
+      break;   
+
+    case "2026-01":      
+    case "2026-02":      
+    case "2026-03":          
+      total_quota = 334;
+      currentQuarter = "2026-Q1";
       break;   
 
       default:
@@ -88,6 +104,25 @@ function getInterviewMonth(interviewEndDate)
    return result;
 }
 
+function getQuarterFromMonth(month, year)
+{
+  //Input: mm, yyyy
+  var quarter = 0;
+  
+  if ((month == '01') || (month == '02') || (month == '03')) {
+    quarter = "Q1";  
+  }
+  else if ((month == '04') || (month == '05') || (month == '06')) {
+    quarter = "Q2";  
+  }
+  else if ((month == '07') || (month == '08') || (month == '09')) {
+    quarter = "Q3";  
+  }
+  else if ((month == '10') || (month == '11') || (month == '12')) {
+    quarter = "Q4";  
+  }
+  return (year + "-" + quarter);
+}
 
 function notDeparted(flight_time) {
   var current_time = new Date().toLocaleString('en-US', { timeZone:  'Asia/Riyadh', hour12: false});
@@ -131,7 +166,7 @@ function prepareInterviewData() {
   quota_data.length = 0;
   for (i = 0; i < quota_data_temp.length; i++) {
     if ((quota_data_temp[i].Quota>0)
-         && (quota_data_temp[i].period_id == current_period))
+         && (quota_data_temp[i].period_id == currentQuarter))
     {
       
       // if (current_period == "2025-04") // Add up 100 due to missing Int / Dom info
@@ -207,14 +242,19 @@ function prepareInterviewData() {
 
     //current_period: 2023-12
     //InterviewDate: 2023-04-01
-    if (current_period == interview.InterviewDate.substring(0,7))//"2023-04-01",
+    var interview_year = interview["InterviewDate"].substring(0,4);
+    var interview_month = interview["InterviewDate"].substring(5,7);//"2023-04-03 06:18:18"    
+    var interview_quarter = getQuarterFromMonth(interview_month, interview_year);
+
+    if (currentQuarter == interview_quarter)//"2023-04-01",
     {
       if (interview["quota_id"]) {
         var quota_id = '"quota_id"' + ":" + '"' +  interview["quota_id"] + '", ';
         var InterviewEndDate = '"InterviewEndDate"' + ":" + '"' +  interview["InterviewDate"] + '", ';
+        var InterviewMonth = '"InterviewMonth"' + ":" + '"' + interview_year + "-" +  interview_month + '", ';
         var Completed_of_interviews = '"Completed_of_interviews"' + ":" + '"' +  interview["Number of interviews"] ;
         
-        var str = '{' + quota_id + InterviewEndDate + Completed_of_interviews + '"}';
+        var str = '{' + quota_id + InterviewEndDate + InterviewMonth + Completed_of_interviews + '"}';
 
         interview_data.push(JSON.parse(str));
        }

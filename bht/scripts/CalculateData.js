@@ -8,6 +8,7 @@ function CalculateAirportAirLineReport() {
   
   total_completed = 0;
   total_quota_completed = 0;
+  this_month_completed = 0;
 
   //check what not belong to quota data
   var found_temp = 0;
@@ -15,6 +16,12 @@ function CalculateAirportAirLineReport() {
   for (i = 0; i < interview_data.length; i++) 
   {
     total_completed = total_completed +   parseInt(interview_data[i].Completed_of_interviews);    
+
+    if (interview_data[i].InterviewMonth == current_period) 
+    { 
+        this_month_completed = this_month_completed +   parseInt(interview_data[i].Completed_of_interviews);    
+    }
+
     found_temp = 0;
     for (j = 0; j < quota_data.length; j++) 
     {
@@ -76,7 +83,7 @@ function CalculateAirportAirLineReport() {
     }  
   }
 
-  total_completed_percent = (100*(total_completed/total_quota)).toFixed(0);   
+  total_completed_percent = (100*(this_month_completed/total_quota)).toFixed(0);   
   daily_plan_data = [];
   daily_plan_data.length = 0;
 

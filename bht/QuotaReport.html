@@ -117,9 +117,10 @@
         //Update time info
         // document.getElementById("download_time").innerHTML = "Data updated: " + download_time;
 
-        var overall_status = "Total quota: " + total_quota;
-        overall_status += " - Total completed: " + total_completed;
         //overall_status += " - Quota completed: " + total_quota_completed;
+        var overall_status =  "This month quota: " + total_quota;
+        overall_status += " - This month completed: " + this_month_completed + " (" + total_completed_percent + "%)";
+        overall_status += " - This quarter completed: " + total_completed ;        
         document.getElementById("overall_status").innerHTML = overall_status + " | " + "Data updated at " + download_time;
       }
     </script>
@@ -134,9 +135,9 @@
       <label for="selected_period">Data collection period:</label>
       <select id="selected_period" onchange="drawTable()">
         <option value="current-period">current month
+        <option value="2025-09">09-2025                                                                                                                                                                                          
         <option value="2025-08">08-2025                                                                                                                                                                                          
         <option value="2025-07">07-2025                                                                                                                                                                                
-        <option value="2025-06">06-2025                                                                                                                                                                      
                                                                                                                                                                
       </select>
     </div>
