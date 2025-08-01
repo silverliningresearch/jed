@@ -61,8 +61,15 @@ function initCurrentTimeVars() {
     case "2025-05":      
       total_quota = 334;
       break;   
+    case "2025-07":      
+      total_quota = 117;
+      break;   
+    case "2025-08":      
+    case "2025-09":      
+      total_quota = 443;
+      break;   
 
-    default:
+      default:
       total_quota = 334;
       break;
   }
