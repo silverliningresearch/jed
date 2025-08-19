@@ -65,9 +65,13 @@ function initCurrentTimeVars() {
       total_quota = 117;
       currentQuarter = "2025-Q3";
       break;   
+
     case "2025-08":      
+      total_quota = 254;
+      currentQuarter = "2025-Q3";
+      break;       
     case "2025-09":      
-      total_quota = 443;
+      total_quota = 300;
       currentQuarter = "2025-Q3";
       break;   
 
@@ -169,64 +173,11 @@ function prepareInterviewData() {
          && (quota_data_temp[i].period_id == currentQuarter))
     {
       
-      // if (current_period == "2025-04") // Add up 100 due to missing Int / Dom info
-      // {
-      //   const twoColumnArray = [
-      //     ["6E-BOM", 1],
-      //     ["AI-DEL", 5],
-      //     ["E5-HBE", 3],
-      //     ["EK-DXB", 2],
-      //     ["ET-ADD", 4],
-      //     ["G9-RKT", 2],
-      //     ["HY-TAS", 1],
-      //     ["IX-CCJ", 1],
-      //     ["IY-ADE", 3],
-      //     ["J2-GYD", 1],
-      //     ["J4-PZU", 4],
-      //     ["J9-KWI", 5],
-      //     ["KU-KWI", 1],
-      //     ["ME-BEY", 3],
-      //     ["MS-CAI", 7],
-      //     ["NE-CAI", 11],
-      //     ["NP-CAI", 5],
-      //     ["OV-MCT", 6],
-      //     ["PC-SAW", 2],
-      //     ["QR-DOH", 3],
-      //     ["RJ-AMM", 2],
-      //     ["SD-PZU", 2],
-      //     ["SM-ATZ", 1],
-      //     ["SM-CAI", 7],
-      //     ["SM-HMB", 1],
-      //     ["SV-AMM", 2],
-      //     ["SV-BCN", 1],
-      //     ["SV-CAI", 3],
-      //     ["SV-DAC", 1],
-      //     ["SV-HYD", 2],
-      //     ["SV-KUL", 2],
-      //     ["SV-KWI", 1],
-      //     ["SV-LAX", 2],
-      //     ["TU-TUN", 1],
-      //     ["UJ-CAI", 3],
-      //     ["W4-MXP", 2],
-      //     ["XY-CAI", 2],
-      //     ["XY-SAW", 1],
-      //   ];
-      //   twoColumnArray.forEach(row => {
-      //     if (quota_data_temp[i].quota_id == row[0]) {
-      //       console.log(`Column 1: ${row[0]}, Column 2: ${row[1]}`);
-      //       console.log("old quota", quota_data_temp[i].Quota);
+    if (currentQuarter == "2025-Q3") 
+    {
+        quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota*0.671, 0);//The total quota in Q3 is only 671
+    }
 
-      //       quota_data_temp[i].Quota = quota_data_temp[i].Quota + row[1];
-
-      //       console.log("new quota", quota_data_temp[i].Quota);
-
-      //     }
-      //   });
-
-      // }
-
-      quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota, 0);// divide to 3
-      
       quota_data.push(quota_data_temp[i]); 
     }
   }
