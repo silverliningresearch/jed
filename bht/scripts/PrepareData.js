@@ -175,7 +175,7 @@ function prepareInterviewData() {
       
     if (currentQuarter == "2025-Q3") 
     {
-        quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota*0.671, 0);//The total quota in Q3 is only 671
+        quota_data_temp[i].Quota = Math.round(quota_data_temp[i].Quota*0.671, 0);//The total quota in Q3 is only 671; it was calculated with 1000 ==> scale down
     }
 
       quota_data.push(quota_data_temp[i]); 
