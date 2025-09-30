@@ -142,6 +142,11 @@ function selected_handler(val) {
       $('.rt-btn.rt-btn-next').show(); 
       break;     
 
+    case "Flight_Number": //Flight_Number
+      save_flight_value(currentSearchQuestion, val);
+      $('.rt-btn.rt-btn-next').show(); 
+      break;   
+
     default:
       break;         
   }
@@ -152,11 +157,17 @@ function changed_handler(val) {
   console.log('changed_handler: ', val);
   console.log('currentSearchQuestion: ', currentSearchQuestion);
   switch (currentSearchQuestion) {
-    case "Core_Q11": //Final airport
-    case "Core_Q13": //From  airport    
-      save_airport_value(currentSearchQuestion, val);
-      $('.rt-btn.rt-btn-next').show(); 
-      break;     
+    // case "Airline": //Airline
+    //   save_airline_value(currentSearchQuestion, val);
+    //   break;     
+
+    // case "Airport": //Airport
+    //   save_airport_value(currentSearchQuestion, val);
+    //   break;     
+
+    // case "Flight_Number": //Airport
+    //   save_flight_value(currentSearchQuestion, val);
+    //   break;   
 
     default:
       break;         

@@ -33,6 +33,8 @@ function getTomorrow() {
   return [day, month, year].join('-');
 }
 
+
+
 function flight_in_list_found(list, item) {
   item = item.toLowerCase();
   
@@ -78,7 +80,7 @@ function notDeparted_flight_search(flight_date, flight_time) {
   return (result);
 }
 
-function load_flight_list(question) {
+function load_search_list(question) {
   flightRawList = JSON.parse(arr_flight_list_Raw);
   var tmpList = [];
   tmpList.length = 0;
@@ -109,11 +111,12 @@ function load_flight_list(question) {
   for (i = 0; i < flightRawList.length; i++) {
     var flight = flightRawList[i];
     if (
-        ((flight.Date == getToDate() || (flight.Date == getTomorrow())) && notDeparted_flight_search(flight.Date, flight.Time)) //today flight && departure
+        //((flight.Date == getToDate() || (flight.Date == getTomorrow())) && notDeparted_flight_search(flight.Date, flight.Time)) //today flight && departure
+        ((flight.Date == getToDate() || (flight.Date == getTomorrow()))) //today flight && departure
         && ((flight.TER == terminal) || (terminal  == "ALL")))
     {
       if (((question == "Airport") && (flight.AirlineCode == airline_value )) //airport: only the same airline 
-        || (question == "Airline")) //airiline: all
+        || (question != "Airport"))
       {
         var item  = flightRawList[i];
         var item_temp  = {};
@@ -129,6 +132,15 @@ function load_flight_list(question) {
         else if (question == "Airport") 
         {
           Show = item.DestName;
+        }
+        else
+        {
+            Show = flightRawList[i].Flight + " (" ;
+            Show += item.Time +" " + item.Date  + " to " + item.DestName ;
+            if (item.Next && item.Next !="" && item.Next != item.Dest) {
+              Show += " via " +  item.Next ;
+            }
+            Show +=")";
         }
 
         item_temp.Show = Show; 
@@ -150,8 +162,8 @@ function load_flight_list(question) {
     );
 
     aui_init_search_list(flightList);
-    console.log("Load flight list done!", tmpList);
-    console.log("Load flight list done!", flightList);
+    // console.log("Load flight list done!", tmpList);
+    // console.log("Load flight list done!", flightList);
 }
 
 function save_airline_value(question, value) {
@@ -175,8 +187,30 @@ function save_airport_value(question, value) {
   console.log("save airport  done!");
 }
 
+function save_flight_value(question, value) {
+  console.log("question:", question);
+  console.log("value:", value);
+
+  api.fn.answers({flight_show:  value.Show});
+  api.fn.answers({terminal: value.TER});
+  api.fn.answers({flight_number:   value.Flight});
+
+  api.fn.answers({airport_code:   value.Dest});
+  api.fn.answers({airport_name: value.DestName});
+  api.fn.answers({airline_code:   value.AirlineCode}); //airline code
+  api.fn.answers({airline_name:   value.Airline});  //airline name
+  api.fn.answers({int_dom:   value.int_dom}); //International vs. domestic
+
+  api.fn.answers({dep_date:   value.Date}); //Date
+  api.fn.answers({dep_time:   value.Time}); //Time
+ 
+  api.fn.answers({flight_number_dontknow: null}); 
+
+  console.log("save flight  done!");
+}
+
 function show_airport_airline_search_box(question) {
-  load_flight_list(question);
+  load_search_list(question);
   
   var defaultValue = "";
 

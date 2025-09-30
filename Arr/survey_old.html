@@ -30,20 +30,17 @@
 
   <body>
     <survalyzer-survey
-      surveyhash="zpxuxnjstc"
+      surveyhash="dmzawmofyo"
       tenant="silverlining"
     ></survalyzer-survey>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://survalyzer.survalyzer.eu/assets/survalyzer-survey.js"></script>
 
-
     <script src="data/JED_arr_flight_list.js"></script>
     
     <script src="scripts/flight_airline_airport_search.js"></script>
-
     <script src="scripts/auto_complete_ui.js"></script>
-
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -55,16 +52,9 @@
             console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
             
             if (api.fn.getCurrentPageIndex()==4) {
-              api.fn.answers({airport_code: ""});
-              api.fn.answers({airline_code: ""}); 
-
-              show_airport_airline_search_box("Flight_Number");
-              $('.rt-btn.rt-btn-next').show(); 
-            } 
-            else if (api.fn.getCurrentPageIndex()==5) {
               show_airport_airline_search_box("Airline");
             } 
-            else if (api.fn.getCurrentPageIndex()==6) {
+            else if (api.fn.getCurrentPageIndex()==5) {
               show_airport_airline_search_box("Airport");
             } 
             else {
