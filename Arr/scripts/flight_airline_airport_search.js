@@ -145,6 +145,7 @@ function load_search_list(question) {
 
         item_temp.Show = Show; 
         item_temp.Dest = item.Dest;
+        item_temp.Flight = item.Flight; 
         item_temp.DestName = item.DestName;
         item_temp.Airline = item.Airline;
         item_temp.AirlineCode = item.AirlineCode;
