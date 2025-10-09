@@ -67,6 +67,21 @@ function initCurrentTimeVars() {
       total_quota = 800 + 80;
       break;    
 
+    case "2025-01":                          
+    case "2025-02":                          
+    case "2025-03":      
+    case "2025-05":      
+    case "2025-06":      
+    case "2025-07":      
+    case "2025-08":      
+    case "2025-09":          
+      total_quota = 800;
+      break;          
+
+    case "2025-10":      
+      total_quota = 1000;
+      break;          
+
     default:
       total_quota = 800;
       break;
