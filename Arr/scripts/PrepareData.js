@@ -83,7 +83,7 @@ function initCurrentTimeVars() {
       break;          
 
     default:
-      total_quota = 800;
+      total_quota = 1000;
       break;
   }
 }
