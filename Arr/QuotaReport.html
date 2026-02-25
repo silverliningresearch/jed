@@ -111,7 +111,7 @@
         dashboard.bind(tableFilter, tableChart);
 
         var view = new google.visualization.DataView(data);
-        //document.getElementById("filter_div").style.display = "none";
+        document.getElementById("filter_div").style.display = "none";
         dashboard.draw(view);
 
         //Update time info
@@ -134,6 +134,7 @@
       <label for="selected_period">Data collection period:</label>
       <select id="selected_period" onchange="drawTable()">
         <option value="current-period">current month
+        <option value="2026-03">03-2026                                                                                                                                                                                                                                                      
         <option value="2026-02">02-2026                                                                                                                                                                                                                                            
         <option value="2026-01">01-2026                                                                                                                                                                                                                                  
         <option value="2025-12">12-2025                                                                                                                                                                                                                        
@@ -147,7 +148,6 @@
         <option value="2025-04">04-2025                                                                                                                                                  
         <option value="2025-03">03-2025                                                                                                                                        
         <option value="2025-02">02-2025                                                                                                                              
-        <option value="2025-01">01-2025                                                                                                                    
 
       </select>
     </div>
