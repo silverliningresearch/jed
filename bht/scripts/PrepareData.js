@@ -89,6 +89,13 @@ function initCurrentTimeVars() {
       currentQuarter = "2026-Q1";
       break;   
 
+    case "2026-04":      
+    case "2026-05":      
+    case "2026-06":          
+      total_quota = 334;
+      currentQuarter = "2026-Q2";
+      break;   
+
       default:
       total_quota = 334;
       break;
