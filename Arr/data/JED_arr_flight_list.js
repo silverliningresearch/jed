@@ -1,6 +1,6 @@
      let arr_flight_list_Raw = ` 
 [
- {
+  {
   "Date": "01-04-2026",
   "Time": "0005",
   "Dest": "BOM",
