@@ -54,17 +54,17 @@
           const listSearchHandler = () => {
             console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
             
-            if (api.fn.getCurrentPageIndex()==4) {
+            if (api.fn.getCurrentPageIndex()==5) {
               api.fn.answers({airport_code: ""});
               api.fn.answers({airline_code: ""}); 
 
               show_airport_airline_search_box("Flight_Number");
               $('.rt-btn.rt-btn-next').show(); 
             } 
-            else if (api.fn.getCurrentPageIndex()==5) {
+            else if (api.fn.getCurrentPageIndex()==6) {
               show_airport_airline_search_box("Airline");
             } 
-            else if (api.fn.getCurrentPageIndex()==6) {
+            else if (api.fn.getCurrentPageIndex()==7) {
               show_airport_airline_search_box("Airport");
             } 
             else {
