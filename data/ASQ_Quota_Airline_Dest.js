@@ -3957,8 +3957,14 @@
   "Notes": ""
  },
  {
-  "Airline_Dest": "QP-CCJ",
-  "Quota": 5.0,
+  "Airline_Dest": "SV-MXP",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+  {
+  "Airline_Dest": "SV-NBO",
+  "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
