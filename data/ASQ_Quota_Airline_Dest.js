@@ -3759,7 +3759,25 @@
 
 
   {
+  "Airline_Dest": "3T-PZU",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
   "Airline_Dest": "6E-BOM",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "6E-AMD",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "6E-BLR",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
@@ -3867,12 +3885,6 @@
   "Notes": ""
  },
  {
-  "Airline_Dest": "GA-CGK",
-  "Quota": 7.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
   "Airline_Dest": "GF-BAH",
   "Quota": 5.0,
   "Quarter": "2026-Q3",
@@ -3897,24 +3909,6 @@
   "Notes": ""
  },
  {
-  "Airline_Dest": "JT-SUB",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "JT-CGK",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "JT-KNO",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
   "Airline_Dest": "KU-KWI",
   "Quota": 5.0,
   "Quarter": "2026-Q3",
@@ -3928,7 +3922,7 @@
  },
  {
   "Airline_Dest": "MH-KUL",
-  "Quota": 4.0,
+  "Quota": 6.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
@@ -3951,19 +3945,7 @@
   "Notes": ""
  },
  {
-  "Airline_Dest": "OD-KUL",
-  "Quota": 6.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
   "Airline_Dest": "OV-MCT",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "PA-ISB",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
@@ -3975,25 +3957,7 @@
   "Notes": ""
  },
  {
-  "Airline_Dest": "PF-ISB",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "PK-ISB",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "PK-LHE",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "QP-BOM",
+  "Airline_Dest": "QP-CCJ",
   "Quota": 5.0,
   "Quarter": "2026-Q3",
   "Notes": ""
@@ -4042,7 +4006,7 @@
  },
  {
   "Airline_Dest": "SV-CGK",
-  "Quota": 14.0,
+  "Quota": 17.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
@@ -4144,7 +4108,7 @@
  },
  {
   "Airline_Dest": "SV-KUL",
-  "Quota": 4.0,
+  "Quota": 6.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
@@ -4179,7 +4143,25 @@
   "Notes": ""
  },
  {
+  "Airline_Dest": "SV-EAM",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
   "Airline_Dest": "SV-JFK",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "SV-MAN",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "SV-MNL",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
@@ -4198,6 +4180,12 @@
  },
  {
   "Airline_Dest": "VF-SAW",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "W9-LGW",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
