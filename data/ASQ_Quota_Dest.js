@@ -3938,7 +3938,7 @@
 
  
 
-  {
+ {
   "Dest": "ABT",
   "Quota": 1,
   "Quarter": "2026-Q3"
@@ -3960,7 +3960,7 @@
  },
  {
   "Dest": "AHB",
-  "Quota": 17,
+  "Quota": 18,
   "Quarter": "2026-Q3"
  },
  {
@@ -4080,7 +4080,7 @@
  },
  {
   "Dest": "CGK",
-  "Quota": 17,
+  "Quota": 18,
   "Quarter": "2026-Q3"
  },
  {
@@ -4100,7 +4100,7 @@
  },
  {
   "Dest": "DAC",
-  "Quota": 8,
+  "Quota": 9,
   "Quarter": "2026-Q3"
  },
  {
@@ -4135,7 +4135,7 @@
  },
  {
   "Dest": "EBB",
-  "Quota": 1,
+  "Quota": 0,
   "Quarter": "2026-Q3"
  },
  {
@@ -4145,7 +4145,7 @@
  },
  {
   "Dest": "ESB",
-  "Quota": 1,
+  "Quota": 2,
   "Quarter": "2026-Q3"
  },
  {
@@ -4155,12 +4155,12 @@
  },
  {
   "Dest": "GGR",
-  "Quota": 1,
+  "Quota": 0,
   "Quarter": "2026-Q3"
  },
  {
   "Dest": "GIZ",
-  "Quota": 9,
+  "Quota": 4,
   "Quarter": "2026-Q3"
  },
  {
@@ -4255,12 +4255,12 @@
  },
  {
   "Dest": "KUL",
-  "Quota": 12,
+  "Quota": 13,
   "Quarter": "2026-Q3"
  },
  {
   "Dest": "KWI",
-  "Quota": 7,
+  "Quota": 8,
   "Quarter": "2026-Q3"
  },
  {
@@ -4270,7 +4270,7 @@
  },
  {
   "Dest": "LHE",
-  "Quota": 10,
+  "Quota": 11,
   "Quarter": "2026-Q3"
  },
  {

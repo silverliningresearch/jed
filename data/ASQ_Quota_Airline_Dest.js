@@ -3910,7 +3910,7 @@
  },
  {
   "Airline_Dest": "KU-KWI",
-  "Quota": 5.0,
+  "Quota": 6.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
@@ -3952,18 +3952,6 @@
  },
  {
   "Airline_Dest": "PC-SAW",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "SV-MXP",
-  "Quota": 4.0,
-  "Quarter": "2026-Q3",
-  "Notes": ""
- },
-  {
-  "Airline_Dest": "SV-NBO",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
@@ -4066,7 +4054,7 @@
  },
  {
   "Airline_Dest": "SV-GIZ",
-  "Quota": 4.0,
+  "Quota": 0.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
@@ -4179,6 +4167,18 @@
   "Notes": ""
  },
  {
+  "Airline_Dest": "SV-MXP",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "SV-NBO",
+  "Quota": 0.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
   "Airline_Dest": "TK-IST",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
@@ -4228,12 +4228,18 @@
  },
  {
   "Airline_Dest": "XY-GIZ",
-  "Quota": 4.0,
+  "Quota": 0.0,
   "Quarter": "2026-Q3",
   "Notes": ""
  },
  {
   "Airline_Dest": "XY-TUU",
+  "Quota": 4.0,
+  "Quarter": "2026-Q3",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "XY-TZX",
   "Quota": 4.0,
   "Quarter": "2026-Q3",
   "Notes": ""
