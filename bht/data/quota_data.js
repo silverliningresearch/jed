@@ -3683,6 +3683,646 @@
   "Quota": 7,
   "Country": "Turkey",
   "period_id": "2026-Q3"
+ },
+
+
+
+  {
+  "quota_id": "ET-ADD",
+  "TER": "North Terminal",
+  "Quota": 5,
+  "Country": "Ethiopia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "J4-PZU",
+  "TER": "North Terminal",
+  "Quota": 4,
+  "Country": "Sudan",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "J9-KWI",
+  "TER": "North Terminal",
+  "Quota": 6,
+  "Country": "Kuwait",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SM-CAI",
+  "TER": "North Terminal",
+  "Quota": 5,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "4P-DMM",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "AT-CMN",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Morocco",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "EK-DXB",
+  "TER": "Terminal 1",
+  "Quota": 22,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "EY-AUH",
+  "TER": "Terminal 1",
+  "Quota": 16,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-AHB",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-CAI",
+  "TER": "Terminal 1",
+  "Quota": 10,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-DMM",
+  "TER": "Terminal 1",
+  "Quota": 15,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-ELQ",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-GIZ",
+  "TER": "Terminal 1",
+  "Quota": 8,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-RUH",
+  "TER": "Terminal 1",
+  "Quota": 62,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "F3-TUU",
+  "TER": "Terminal 1",
+  "Quota": 8,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "FZ-DXB",
+  "TER": "Terminal 1",
+  "Quota": 10,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "GF-BAH",
+  "TER": "Terminal 1",
+  "Quota": 12,
+  "Country": "Bahrain",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "HU-HAK",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "China",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "KU-KWI",
+  "TER": "Terminal 1",
+  "Quota": 10,
+  "Country": "Kuwait",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "ME-BEY",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Lebanon",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "MH-KUL",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Malaysia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "MS-CAI",
+  "TER": "Terminal 1",
+  "Quota": 27,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "QR-DOH",
+  "TER": "Terminal 1",
+  "Quota": 30,
+  "Country": "Qatar",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "RJ-AMM",
+  "TER": "Terminal 1",
+  "Quota": 19,
+  "Country": "Jordan",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "RX-RUH",
+  "TER": "Terminal 1",
+  "Quota": 19,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-AHB",
+  "TER": "Terminal 1",
+  "Quota": 27,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-ALG",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "Country": "Algeria",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-ALY",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-AMS",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Netherlands",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-BLR",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-BOM",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-CAI",
+  "TER": "Terminal 1",
+  "Quota": 39,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-CAN",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "China",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-CDG",
+  "TER": "Terminal 1",
+  "Quota": 8,
+  "Country": "France",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-CGK",
+  "TER": "Terminal 1",
+  "Quota": 19,
+  "Country": "Indonesia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-CMN",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "Country": "Morocco",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-DAC",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "Country": "Bangladesh",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-DEL",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-DMM",
+  "TER": "Terminal 1",
+  "Quota": 21,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-DXB",
+  "TER": "Terminal 1",
+  "Quota": 17,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-ELQ",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-GIZ",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-HYD",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-ISB",
+  "TER": "Terminal 1",
+  "Quota": 14,
+  "Country": "Pakistan",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-IST",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "Turkey",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-JFK",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "United States",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-KAN",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Nigeria",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-KHI",
+  "TER": "Terminal 1",
+  "Quota": 8,
+  "Country": "Pakistan",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-KUL",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "Malaysia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-LHE",
+  "TER": "Terminal 1",
+  "Quota": 14,
+  "Country": "Pakistan",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-LHR",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "United Kingdom",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-LKO",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-MAN",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "United Kingdom",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-MED",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-MNL",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Philippines",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-MUX",
+  "TER": "Terminal 1",
+  "Quota": 6,
+  "Country": "Pakistan",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-MXP",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Italy",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-NBO",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Kenya",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-RUH",
+  "TER": "Terminal 1",
+  "Quota": 85,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-TUN",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Tunisia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-TUU",
+  "TER": "Terminal 1",
+  "Quota": 9,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "TK-IST",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "Country": "Turkey",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "WY-MCT",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "Oman",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-ADD",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Ethiopia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-AHB",
+  "TER": "Terminal 1",
+  "Quota": 13,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-ALG",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Algeria",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-ASM",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Eritrea",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-BSZ",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "United States",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-CAI",
+  "TER": "Terminal 1",
+  "Quota": 19,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-DAM",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Syria",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-DMM",
+  "TER": "Terminal 1",
+  "Quota": 22,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-DOH",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Qatar",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-DWC",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-DXB",
+  "TER": "Terminal 1",
+  "Quota": 15,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-EAM",
+  "TER": "Terminal 1",
+  "Quota": 5,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-GIZ",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-NBO",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Kenya",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-RUH",
+  "TER": "Terminal 1",
+  "Quota": 56,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "XY-TUU",
+  "TER": "Terminal 1",
+  "Quota": 7,
+  "Country": "Saudi Arabia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "6E-BOM",
+  "TER": "Terminal 4",
+  "Quota": 4,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "E5-CAI",
+  "TER": "Terminal 4",
+  "Quota": 4,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "ET-ADD",
+  "TER": "Terminal 4",
+  "Quota": 5,
+  "Country": "Ethiopia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "G9-SHJ",
+  "TER": "Terminal 4",
+  "Quota": 6,
+  "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "J9-KWI",
+  "TER": "Terminal 4",
+  "Quota": 13,
+  "Country": "Kuwait",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "OV-MCT",
+  "TER": "Terminal 4",
+  "Quota": 7,
+  "Country": "Oman",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "PC-SAW",
+  "TER": "Terminal 4",
+  "Quota": 7,
+  "Country": "Turkey",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "QP-BOM",
+  "TER": "Terminal 4",
+  "Quota": 5,
+  "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SM-ALY",
+  "TER": "Terminal 4",
+  "Quota": 4,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SM-CAI",
+  "TER": "Terminal 4",
+  "Quota": 7,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "VF-ESB",
+  "TER": "Terminal 4",
+  "Quota": 4,
+  "Country": "Turkey",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "VF-SAW",
+  "TER": "Terminal 4",
+  "Quota": 6,
+  "Country": "Turkey",
+  "period_id": "2026-Q4"
  }
 ]    
 
