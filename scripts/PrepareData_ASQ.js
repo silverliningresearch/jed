@@ -250,7 +250,12 @@ function prepareInterviewData_asq() {
        }
     }
 
-    if (flight.Quota > 0) daily_plan_data_asq.push(flight);
+   //flight.Date: 08-10-2026
+    if ((flight.Date.substring(3,10) != "10-2026") ||  
+    ((flight.Date.substring(3,10) == "10-2026") && (flight.TER != "Terminal 4") ))
+    { 
+      if (flight.Quota > 0) daily_plan_data_asq.push(flight);
+    }
   }
   //console.log("daily_plan_data:", daily_plan_data_asq)
 }
