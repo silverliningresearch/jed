@@ -94,9 +94,9 @@ function load_flight_list() {
   {
     terminal  = "North Terminal";
   }
-  else
+  else if (terminal_value == 4)
   {
-    terminal  = "South Terminal";
+    terminal  = "Terminal 4";
   }
 
   console.log("terminal_value: ", terminal_value);
