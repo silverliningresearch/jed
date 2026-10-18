@@ -3688,51 +3688,23 @@
 
 
   {
-  "quota_id": "ET-ADD",
-  "TER": "North Terminal",
-  "Quota": 5,
-  "Country": "Ethiopia",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "J4-PZU",
-  "TER": "North Terminal",
-  "Quota": 4,
-  "Country": "Sudan",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "J9-KWI",
-  "TER": "North Terminal",
-  "Quota": 6,
-  "Country": "Kuwait",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "SM-CAI",
-  "TER": "North Terminal",
-  "Quota": 5,
-  "Country": "Egypt",
-  "period_id": "2026-Q4"
- },
- {
   "quota_id": "4P-DMM",
   "TER": "Terminal 1",
-  "Quota": 5,
+  "Quota": 7,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "AT-CMN",
   "TER": "Terminal 1",
-  "Quota": 3,
+  "Quota": 4,
   "Country": "Morocco",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "EK-DXB",
   "TER": "Terminal 1",
-  "Quota": 22,
+  "Quota": 17,
   "Country": "United Arab Emirates",
   "period_id": "2026-Q4"
  },
@@ -3746,7 +3718,7 @@
  {
   "quota_id": "F3-AHB",
   "TER": "Terminal 1",
-  "Quota": 13,
+  "Quota": 12,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
@@ -3760,7 +3732,7 @@
  {
   "quota_id": "F3-DMM",
   "TER": "Terminal 1",
-  "Quota": 15,
+  "Quota": 14,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
@@ -3774,35 +3746,28 @@
  {
   "quota_id": "F3-GIZ",
   "TER": "Terminal 1",
-  "Quota": 8,
+  "Quota": 6,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "F3-RUH",
   "TER": "Terminal 1",
-  "Quota": 62,
+  "Quota": 58,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "F3-TUU",
   "TER": "Terminal 1",
-  "Quota": 8,
+  "Quota": 7,
   "Country": "Saudi Arabia",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "FZ-DXB",
-  "TER": "Terminal 1",
-  "Quota": 10,
-  "Country": "United Arab Emirates",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "GF-BAH",
   "TER": "Terminal 1",
-  "Quota": 12,
+  "Quota": 16,
   "Country": "Bahrain",
   "period_id": "2026-Q4"
  },
@@ -3816,7 +3781,7 @@
  {
   "quota_id": "KU-KWI",
   "TER": "Terminal 1",
-  "Quota": 10,
+  "Quota": 9,
   "Country": "Kuwait",
   "period_id": "2026-Q4"
  },
@@ -3830,28 +3795,28 @@
  {
   "quota_id": "MH-KUL",
   "TER": "Terminal 1",
-  "Quota": 3,
+  "Quota": 5,
   "Country": "Malaysia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "MS-CAI",
   "TER": "Terminal 1",
-  "Quota": 27,
+  "Quota": 24,
   "Country": "Egypt",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "QR-DOH",
   "TER": "Terminal 1",
-  "Quota": 30,
+  "Quota": 35,
   "Country": "Qatar",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "RJ-AMM",
   "TER": "Terminal 1",
-  "Quota": 19,
+  "Quota": 15,
   "Country": "Jordan",
   "period_id": "2026-Q4"
  },
@@ -3865,22 +3830,22 @@
  {
   "quota_id": "SV-AHB",
   "TER": "Terminal 1",
-  "Quota": 27,
+  "Quota": 14,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-ALG",
   "TER": "Terminal 1",
-  "Quota": 9,
+  "Quota": 10,
   "Country": "Algeria",
   "period_id": "2026-Q4"
  },
  {
-  "quota_id": "SV-ALY",
+  "quota_id": "SV-AMM",
   "TER": "Terminal 1",
-  "Quota": 3,
-  "Country": "Egypt",
+  "Quota": 4,
+  "Country": "Jordan",
   "period_id": "2026-Q4"
  },
  {
@@ -3888,6 +3853,20 @@
   "TER": "Terminal 1",
   "Quota": 3,
   "Country": "Netherlands",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-BHX",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "United Kingdom",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-BKK",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Thailand",
   "period_id": "2026-Q4"
  },
  {
@@ -3900,14 +3879,14 @@
  {
   "quota_id": "SV-BOM",
   "TER": "Terminal 1",
-  "Quota": 6,
+  "Quota": 7,
   "Country": "India",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-CAI",
   "TER": "Terminal 1",
-  "Quota": 39,
+  "Quota": 37,
   "Country": "Egypt",
   "period_id": "2026-Q4"
  },
@@ -3935,14 +3914,21 @@
  {
   "quota_id": "SV-CMN",
   "TER": "Terminal 1",
-  "Quota": 9,
+  "Quota": 8,
   "Country": "Morocco",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-COK",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "India",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-DAC",
   "TER": "Terminal 1",
-  "Quota": 9,
+  "Quota": 10,
   "Country": "Bangladesh",
   "period_id": "2026-Q4"
  },
@@ -3956,49 +3942,63 @@
  {
   "quota_id": "SV-DMM",
   "TER": "Terminal 1",
-  "Quota": 21,
+  "Quota": 19,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-DXB",
   "TER": "Terminal 1",
-  "Quota": 17,
+  "Quota": 16,
   "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-EAM",
+  "TER": "Terminal 1",
+  "Quota": 3,
+  "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-ELQ",
   "TER": "Terminal 1",
-  "Quota": 6,
+  "Quota": 5,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-GIZ",
   "TER": "Terminal 1",
-  "Quota": 7,
+  "Quota": 10,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-HYD",
   "TER": "Terminal 1",
-  "Quota": 3,
+  "Quota": 4,
   "Country": "India",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-IAD",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "United States",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-ISB",
   "TER": "Terminal 1",
-  "Quota": 14,
+  "Quota": 11,
   "Country": "Pakistan",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-IST",
   "TER": "Terminal 1",
-  "Quota": 7,
+  "Quota": 11,
   "Country": "Turkey",
   "period_id": "2026-Q4"
  },
@@ -4007,13 +4007,6 @@
   "TER": "Terminal 1",
   "Quota": 4,
   "Country": "United States",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "SV-KAN",
-  "TER": "Terminal 1",
-  "Quota": 4,
-  "Country": "Nigeria",
   "period_id": "2026-Q4"
  },
  {
@@ -4026,21 +4019,28 @@
  {
   "quota_id": "SV-KUL",
   "TER": "Terminal 1",
-  "Quota": 7,
+  "Quota": 8,
   "Country": "Malaysia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SV-KWI",
+  "TER": "Terminal 1",
+  "Quota": 4,
+  "Country": "Kuwait",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-LHE",
   "TER": "Terminal 1",
-  "Quota": 14,
+  "Quota": 13,
   "Country": "Pakistan",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SV-LHR",
   "TER": "Terminal 1",
-  "Quota": 7,
+  "Quota": 9,
   "Country": "United Kingdom",
   "period_id": "2026-Q4"
  },
@@ -4054,7 +4054,7 @@
  {
   "quota_id": "SV-MAN",
   "TER": "Terminal 1",
-  "Quota": 4,
+  "Quota": 5,
   "Country": "United Kingdom",
   "period_id": "2026-Q4"
  },
@@ -4075,15 +4075,8 @@
  {
   "quota_id": "SV-MUX",
   "TER": "Terminal 1",
-  "Quota": 6,
-  "Country": "Pakistan",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "SV-MXP",
-  "TER": "Terminal 1",
   "Quota": 5,
-  "Country": "Italy",
+  "Country": "Pakistan",
   "period_id": "2026-Q4"
  },
  {
@@ -4096,7 +4089,7 @@
  {
   "quota_id": "SV-RUH",
   "TER": "Terminal 1",
-  "Quota": 85,
+  "Quota": 91,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
@@ -4110,50 +4103,50 @@
  {
   "quota_id": "SV-TUU",
   "TER": "Terminal 1",
-  "Quota": 9,
+  "Quota": 7,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "TK-IST",
   "TER": "Terminal 1",
-  "Quota": 13,
+  "Quota": 17,
   "Country": "Turkey",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "WY-MCT",
   "TER": "Terminal 1",
-  "Quota": 7,
+  "Quota": 8,
   "Country": "Oman",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-ADD",
   "TER": "Terminal 1",
-  "Quota": 5,
+  "Quota": 4,
   "Country": "Ethiopia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-AHB",
   "TER": "Terminal 1",
-  "Quota": 13,
+  "Quota": 7,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-ALG",
   "TER": "Terminal 1",
-  "Quota": 4,
+  "Quota": 5,
   "Country": "Algeria",
   "period_id": "2026-Q4"
  },
  {
-  "quota_id": "XY-ASM",
+  "quota_id": "XY-AMM",
   "TER": "Terminal 1",
-  "Quota": 3,
-  "Country": "Eritrea",
+  "Quota": 4,
+  "Country": "Jordan",
   "period_id": "2026-Q4"
  },
  {
@@ -4166,113 +4159,134 @@
  {
   "quota_id": "XY-CAI",
   "TER": "Terminal 1",
-  "Quota": 19,
+  "Quota": 18,
   "Country": "Egypt",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-DAM",
   "TER": "Terminal 1",
-  "Quota": 5,
+  "Quota": 4,
   "Country": "Syria",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-DMM",
   "TER": "Terminal 1",
-  "Quota": 22,
+  "Quota": 21,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-DOH",
   "TER": "Terminal 1",
-  "Quota": 5,
+  "Quota": 4,
   "Country": "Qatar",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-DWC",
   "TER": "Terminal 1",
-  "Quota": 5,
+  "Quota": 3,
   "Country": "United Arab Emirates",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-DXB",
   "TER": "Terminal 1",
-  "Quota": 15,
+  "Quota": 9,
   "Country": "United Arab Emirates",
   "period_id": "2026-Q4"
  },
  {
-  "quota_id": "XY-EAM",
+  "quota_id": "XY-GIZ",
   "TER": "Terminal 1",
   "Quota": 5,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
-  "quota_id": "XY-GIZ",
-  "TER": "Terminal 1",
-  "Quota": 7,
-  "Country": "Saudi Arabia",
-  "period_id": "2026-Q4"
- },
- {
-  "quota_id": "XY-NBO",
+  "quota_id": "XY-KHI",
   "TER": "Terminal 1",
   "Quota": 4,
-  "Country": "Kenya",
+  "Country": "Pakistan",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-RUH",
   "TER": "Terminal 1",
-  "Quota": 56,
+  "Quota": 53,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "XY-TUU",
   "TER": "Terminal 1",
-  "Quota": 7,
+  "Quota": 6,
   "Country": "Saudi Arabia",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "6E-BOM",
   "TER": "Terminal 4",
-  "Quota": 4,
+  "Quota": 6,
   "Country": "India",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "E5-CAI",
   "TER": "Terminal 4",
-  "Quota": 4,
+  "Quota": 3,
   "Country": "Egypt",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "ET-ADD",
   "TER": "Terminal 4",
-  "Quota": 5,
+  "Quota": 10,
   "Country": "Ethiopia",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "FZ-DXB",
+  "TER": "Terminal 4",
+  "Quota": 10,
+  "Country": "United Arab Emirates",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "G9-SHJ",
   "TER": "Terminal 4",
-  "Quota": 6,
+  "Quota": 11,
   "Country": "United Arab Emirates",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "J4-PZU",
+  "TER": "Terminal 4",
+  "Quota": 9,
+  "Country": "Sudan",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "J9-KWI",
   "TER": "Terminal 4",
-  "Quota": 13,
+  "Quota": 20,
   "Country": "Kuwait",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "NE-CAI",
+  "TER": "Terminal 4",
+  "Quota": 4,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "NP-CAI",
+  "TER": "Terminal 4",
+  "Quota": 6,
+  "Country": "Egypt",
   "period_id": "2026-Q4"
  },
  {
@@ -4299,14 +4313,28 @@
  {
   "quota_id": "SM-ALY",
   "TER": "Terminal 4",
-  "Quota": 4,
+  "Quota": 5,
   "Country": "Egypt",
   "period_id": "2026-Q4"
  },
  {
   "quota_id": "SM-CAI",
   "TER": "Terminal 4",
-  "Quota": 7,
+  "Quota": 8,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "SM-HRG",
+  "TER": "Terminal 4",
+  "Quota": 4,
+  "Country": "Egypt",
+  "period_id": "2026-Q4"
+ },
+ {
+  "quota_id": "UJ-CAI",
+  "TER": "Terminal 4",
+  "Quota": 4,
   "Country": "Egypt",
   "period_id": "2026-Q4"
  },
