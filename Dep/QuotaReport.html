@@ -57,6 +57,7 @@
         var data = new google.visualization.DataTable();
 
         //define header
+        data.addColumn('string', 'Terminal');        
         data.addColumn('string', 'Airline-Dest');
         data.addColumn('string', 'To');
         //data.addColumn('string', 'DOOP [Mon-Sun]');
@@ -71,6 +72,7 @@
           var row = quota_data[i];
           data.addRows([
           [
+            row.TER, 
             row.quota_id, 
             row.Country,
             //row.doop,
@@ -92,7 +94,7 @@
           'controlType': 'CategoryFilter',
           'containerId': 'filter_div',
           'options': {
-            'filterColumnLabel': 'To'
+            'filterColumnLabel': 'Terminal'
           }
         });
   
@@ -111,7 +113,7 @@
         dashboard.bind(tableFilter, tableChart);
 
         var view = new google.visualization.DataView(data);
-        document.getElementById("filter_div").style.display = "none";
+        // document.getElementById("filter_div").style.display = "none";
         dashboard.draw(view);
 
         //Update time info
@@ -134,6 +136,7 @@
       <label for="selected_period">Data collection period:</label>
       <select id="selected_period" onchange="drawTable()">
         <option value="current-period">current month
+        <option value="2026-11">11-2026                                                                                                                                                                                                                                                                                                                            
         <option value="2026-10">10-2026                                                                                                                                                                                                                                                                                                                  
         <option value="2026-09">09-2026                                                                                                                                                                                                                                                                                                        
         <option value="2026-08">08-2026                                                                                                                                                                                                                                                                                              
