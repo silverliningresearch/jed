@@ -4254,7 +4254,7 @@
 
 
 
-  {
+   {
   "Airline_Dest": "6E-BOM",
   "Quota": 4.0,
   "Quarter": "2026-Q4",
@@ -4298,7 +4298,7 @@
  },
  {
   "Airline_Dest": "EY-AUH",
-  "Quota": 4.0,
+  "Quota": 5.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -4322,12 +4322,6 @@
  },
  {
   "Airline_Dest": "F3-CAI",
-  "Quota": 4.0,
-  "Quarter": "2026-Q4",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "F3-GIZ",
   "Quota": 4.0,
   "Quarter": "2026-Q4",
   "Notes": ""
@@ -4375,6 +4369,12 @@
   "Notes": ""
  },
  {
+  "Airline_Dest": "IX-CCJ",
+  "Quota": 4.0,
+  "Quarter": "2026-Q4",
+  "Notes": ""
+ },
+ {
   "Airline_Dest": "J2-GYD",
   "Quota": 4.0,
   "Quarter": "2026-Q4",
@@ -4406,13 +4406,13 @@
  },
  {
   "Airline_Dest": "MH-KUL",
-  "Quota": 4.0,
+  "Quota": 5.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
  {
   "Airline_Dest": "MS-CAI",
-  "Quota": 9.0,
+  "Quota": 10.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -4435,6 +4435,12 @@
   "Notes": ""
  },
  {
+  "Airline_Dest": "QP-BOM",
+  "Quota": 5.0,
+  "Quarter": "2026-Q4",
+  "Notes": ""
+ },
+ {
   "Airline_Dest": "QR-DOH",
   "Quota": 12.0,
   "Quarter": "2026-Q4",
@@ -4449,12 +4455,6 @@
  {
   "Airline_Dest": "RJ-ADJ",
   "Quota": 4.0,
-  "Quarter": "2026-Q4",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "RX-RUH",
-  "Quota": 8.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -4521,12 +4521,6 @@
  {
   "Airline_Dest": "SV-DAC",
   "Quota": 9.0,
-  "Quarter": "2026-Q4",
-  "Notes": ""
- },
- {
-  "Airline_Dest": "SV-GIZ",
-  "Quota": 5.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -4615,12 +4609,6 @@
   "Notes": ""
  },
  {
-  "Airline_Dest": "SV-EAM",
-  "Quota": 4.0,
-  "Quarter": "2026-Q4",
-  "Notes": ""
- },
- {
   "Airline_Dest": "SV-HYD",
   "Quota": 4.0,
   "Quarter": "2026-Q4",
@@ -4640,7 +4628,7 @@
  },
  {
   "Airline_Dest": "SV-MUX",
-  "Quota": 5.0,
+  "Quota": 6.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -4737,6 +4725,12 @@
  {
   "Airline_Dest": "XY-KHI",
   "Quota": 4.0,
+  "Quarter": "2026-Q4",
+  "Notes": ""
+ },
+ {
+  "Airline_Dest": "RX-ELQ",
+  "Quota": 8.0,
   "Quarter": "2026-Q4",
   "Notes": ""
  }

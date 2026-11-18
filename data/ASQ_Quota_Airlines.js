@@ -3184,13 +3184,13 @@
  },
  {
   "Airline": "EY",
-  "Quota": 4,
+  "Quota": 5,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
  {
   "Airline": "F3",
-  "Quota": 53,
+  "Quota": 52,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3226,7 +3226,7 @@
  },
  {
   "Airline": "IX",
-  "Quota": 1,
+  "Quota": 4,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3280,7 +3280,7 @@
  },
  {
   "Airline": "MS",
-  "Quota": 10,
+  "Quota": 11,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3304,7 +3304,7 @@
  },
  {
   "Airline": "OD",
-  "Quota": 2,
+  "Quota": 3,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3334,7 +3334,7 @@
  },
  {
   "Airline": "PK",
-  "Quota": 4,
+  "Quota": 5,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3376,13 +3376,13 @@
  },
  {
   "Airline": "SM",
-  "Quota": 10,
+  "Quota": 11,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
  {
   "Airline": "SV",
-  "Quota": 198,
+  "Quota": 192,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3436,7 +3436,7 @@
  },
  {
   "Airline": "XY",
-  "Quota": 59,
+  "Quota": 58,
   "Quarter": "2026-Q4",
   "Notes": ""
  },
@@ -3446,6 +3446,7 @@
   "Quarter": "2026-Q4",
   "Notes": ""
  }
+
 ]    
 
  `;

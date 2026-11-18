@@ -4460,7 +4460,7 @@
  },
 
 
-  {
+ {
   "Dest": "ABT",
   "Quota": 1,
   "Quarter": "2026-Q4"
@@ -4532,7 +4532,7 @@
  },
  {
   "Dest": "AUH",
-  "Quota": 5,
+  "Quota": 6,
   "Quarter": "2026-Q4"
  },
  {
@@ -4562,7 +4562,7 @@
  },
  {
   "Dest": "BLR",
-  "Quota": 3,
+  "Quota": 4,
   "Quarter": "2026-Q4"
  },
  {
@@ -4582,7 +4582,7 @@
  },
  {
   "Dest": "CAI",
-  "Quota": 44,
+  "Quota": 45,
   "Quarter": "2026-Q4"
  },
  {
@@ -4642,7 +4642,7 @@
  },
  {
   "Dest": "DMM",
-  "Quota": 21,
+  "Quota": 22,
   "Quarter": "2026-Q4"
  },
  {
@@ -4657,12 +4657,12 @@
  },
  {
   "Dest": "EAM",
-  "Quota": 3,
+  "Quota": 0,
   "Quarter": "2026-Q4"
  },
  {
   "Dest": "ELQ",
-  "Quota": 5,
+  "Quota": 13,
   "Quarter": "2026-Q4"
  },
  {
@@ -4677,7 +4677,7 @@
  },
  {
   "Dest": "GIZ",
-  "Quota": 10,
+  "Quota": 0,
   "Quarter": "2026-Q4"
  },
  {
@@ -4717,12 +4717,12 @@
  },
  {
   "Dest": "HRG",
-  "Quota": 1,
+  "Quota": 2,
   "Quarter": "2026-Q4"
  },
  {
   "Dest": "HYD",
-  "Quota": 3,
+  "Quota": 4,
   "Quarter": "2026-Q4"
  },
  {
@@ -4772,7 +4772,7 @@
  },
  {
   "Dest": "KUL",
-  "Quota": 9,
+  "Quota": 10,
   "Quarter": "2026-Q4"
  },
  {
@@ -4842,7 +4842,7 @@
  },
  {
   "Dest": "MUX",
-  "Quota": 5,
+  "Quota": 6,
   "Quarter": "2026-Q4"
  },
  {
@@ -4882,7 +4882,7 @@
  },
  {
   "Dest": "RUH",
-  "Quota": 92,
+  "Quota": 87,
   "Quarter": "2026-Q4"
  },
  {
@@ -4957,6 +4957,16 @@
  },
  {
   "Dest": "ZYL",
+  "Quota": 1,
+  "Quarter": "2026-Q4"
+ },
+ {
+  "Dest": "ASM",
+  "Quota": 1,
+  "Quarter": "2026-Q4"
+ },
+ {
+  "Dest": "IXE",
   "Quota": 1,
   "Quarter": "2026-Q4"
  }
